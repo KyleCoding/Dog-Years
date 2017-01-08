@@ -2,7 +2,7 @@
 
 puts "What is your dogs age in human years? " + "\n"
 age = gets.to_i
-print "What breed is your dog? Choose from our selection: Doberman - Boxer - Dachshund - Poodle - Golden Retriever - German Shepard - Siberian Huskey - Beagle - Pug - Bulldog - Shih Tzu - Rottweiler - Chihuahua " + "\n"
+print "\n" + "What breed is your dog? Choose from our selection: Doberman - Boxer - Dachshund - Poodle - Golden Retriever - German Shepard - Siberian Huskey - Beagle - Pug - Bulldog - Shih Tzu - Rottweiler - Chihuahua " + "\n"
 breed = gets.chomp
 breed.downcase!
 if breed == "doberman"
@@ -48,20 +48,20 @@ else
 	print "That is an invalid selection." + "\n"
 end	
 
-print "The life expectancy of your #{breed.capitalize} is #{lifes} - #{lifel} human years." + "\n"
+print "\n" + "The life expectancy of your #{breed.capitalize} is #{lifes} - #{lifel} human years." + "\n"
 
 dogage = age * 7
-print "Your #{breed.capitalize} is #{dogage} dog years old." + "\n"
+print "\n" + "Your #{breed.capitalize} is #{dogage} dog years old." + "\n"
 
 if age < lifes
 	lifespans = lifes - age
 	lifespanl = lifel - age
-	print "Your #{breed.capitalize} could live for #{lifespans} to #{lifespanl} more human years. " + "\n"
-	print "That's #{lifespans * 7} to #{lifespanl * 7} more dog years!" + "\n"
+	print "\n" + "Your #{breed.capitalize} could live for #{lifespans} to #{lifespanl} more human years. " + "\n"
+	print "\n" + "That's #{lifespans * 7} to #{lifespanl * 7} more dog years!" + "\n"
 elsif age >= lifes and age <= lifel
 	lifespanl = lifel - age
-	print "Your #{breed.capitalize} could live for #{lifespanl} more human year(s). " + "\n"
-	print "That's #{lifespanl * 7} more dog years!" + "\n"
+	print "\n" + "Your #{breed.capitalize} could live for #{lifespanl} more human year(s). " + "\n"
+	print "\n" + "That's #{lifespanl * 7} more dog years!" + "\n"
 elsif age > lifel
-	print "Your #{breed.capitalize} is over it's lifespan. For all I know, it could die today." + "\n"
+	print "\n" + "Your #{breed.capitalize} is over it's lifespan. For all I know, it could die today." + "\n"
 end
