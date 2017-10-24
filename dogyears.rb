@@ -44,6 +44,9 @@ elsif breed == "rottweiler"
 elsif breed == "chihuahua"
 	lifes = 10
 	lifel = 18
+elsif breed == "golden doodle"
+	lifes = 10
+	lifel = 15
 else
 	print "That is an invalid selection." + "\n"
 end	
