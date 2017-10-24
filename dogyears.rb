@@ -2,7 +2,7 @@
 
 puts "What is your dogs age in human years? " + "\n"
 age = gets.to_i
-print "\n" + "What breed is your dog? Choose from our selection: Doberman - Boxer - Dachshund - Poodle - Golden Retriever - German Shepard - Siberian Huskey - Beagle - Pug - Bulldog - Shih Tzu - Rottweiler - Chihuahua " + "\n"
+print "\n" + "What breed is your dog? Choose from our selection: Doberman - Boxer - Dachshund - Poodle - Golden Retriever - German Shepard - Siberian Huskey - Beagle - Pug - Bulldog - Shih Tzu - Rottweiler - Chihuahua - Golden Doodle" + "\n"
 breed = gets.chomp
 breed.downcase!
 if breed == "doberman"
